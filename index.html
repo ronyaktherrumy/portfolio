@@ -4,20 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind</title>
-
+  <title>My portfolio</title>
+<link rel="icon" type="img" href="./images/Snapchat-1874219211.jpg">
   <!-- -------------tailwind & daysi ---------------->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- tailwind custome  -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            " nil": "#505ABB",
 
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
 <body>
   <!-------- start here----- -->
   <div class="navbar bg-base-400">
     <div class="navbar-start">
-      <a class="btn btn-ghost text-2xl">RONYRUMY</a>
+      <a class="btn btn-ghost text-2xl text-yellow-500">RONYRUMY</a>
     </div>
     <div class="navbar-center hidden lg:flex ">
       <ul class="menu menu-horizontal px-1 text-xl">
@@ -52,11 +64,15 @@
   </div>
   <!-- ------------hero section end here --------------->
 
+
+
+
   <!-- ------------about section start here --------------->
-  <div class="hero min-h-screen">
+
+  <div class="hero min-h-screen mb-14">
     <div class="hero-content text-center text-neutral-content">
       <div class="max-w-md">
-        <h1 class="mb-5 text-5xl font-bold">About Me</h1>
+        <h1 class="my-10 text-5xl font-bold">About Me</h1>
         <p class="mb-5">I'm a web designer & developer. Master in Computer Engineering
           Harvard University / 2015 - 2017.Good in technology and accurate information for enterprise and manpower
           skills.
@@ -70,7 +86,7 @@
 
   <!-- ------------reating section start here --------------->
 
-  <div class="stats flex shadow ">
+  <div class="stats flex flex-col lg:flex-row justify-evenly shadow ">
 
     <div class="stat">
       <div class="stat-figure text-primary">
@@ -105,13 +121,13 @@
   <!-- ------------what i do section start here --------------->
 
   <h1 class="card-title mb-5 text-5xl font-bold  hero-content text-center mt-20">What i do?</h1>
-  <section class="flex gap-4 sm:mr-16 lg:justify-center mb-28">
+  <section class="flex flex-col lg:flex-row gap-4  items-center lg:justify-center mb-28">
     <div class="card w-96 bg-base-100 shadow-xl">
       <figure class="px-10 pt-10">
         <img src="./icons/js.png" alt="Shoes" class="rounded-xl" />
       </figure>
       <div class="card-body items-center text-center">
-        <h2 class="card-title text-2xl">Javascript</h2>
+        <h2 class="card-title text-2xl text-amber-500">Javascript</h2>
         <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons
           available. </p>
         <div class="card-actions">
@@ -123,7 +139,7 @@
         <img src="./icons/react.png" alt="Shoes" class="rounded-xl" />
       </figure>
       <div class="card-body items-center text-center">
-        <h2 class="card-title text-2xl">React</h2>
+        <h2 class="card-title text-2xl text-amber-500">React</h2>
         <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons
           available.</p>
         <div class="card-actions">
@@ -135,7 +151,7 @@
         <img src="./icons/nodejs.png" alt="Shoes" class="rounded-xl" />
       </figure>
       <div class="card-body items-center text-center">
-        <h2 class="card-title text-2xl">Nodejs</h2>
+        <h2 class="card-title text-2xl text-amber-500">Nodejs</h2>
         <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons
           available.</p>
         <div class="card-actions">
@@ -149,13 +165,13 @@
   <!-- ------------experience section start here --------------->
 
 
-  <!-- <h1 class="card-title mb-5 text-5xl font-bold  hero-content text-center my-20">A summary of my resume</h1>
-  <section class="flex justify-center gap-8 ">
+  <h1 class="card-title mb-5 text-5xl font-bold  hero-content text-center my-20">A summary of my resume</h1>
+  <section class="flex flex-col lg:flex-row items-center lg:justify-center gap-8 ">
     <div class="mt-10">
       <div class="card w-96 bg-base-100 shadow-xl mb-8">
         <div class="card-body">
-          <h2 class="card-title text-2xl">My Experience</h2>
-          <h4 class="text-xl">Diploma in Computer Engineering</h4>
+          <h2 class="card-title text-2xl font-bold text-amber-500">My Experience</h2>
+          <h4 class="text-xl ">Diploma in Computer Engineering</h4>
 
           <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons
             available. Aenean commodo ligula eget dolor.?</p>
@@ -164,8 +180,8 @@
       </div>
       <div class="card w-96 bg-base-100 shadow-xl">
         <div class="card-body">
-          <h2 class="card-title text-2xl">My Experience</h2>
-          <h4 class="text-xl">BSE in Computer Engineering</h4>
+          <h2 class="card-title text-2xl font-bold text-amber-500">My Experience</h2>
+          <h4 class="text-xl font-bold">BSE in Computer Engineering</h4>
           <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons
             available. Aenean commodo ligula eget dolor.?</p>
 
@@ -175,16 +191,16 @@
     <div class="mt-10">
       <div class="card w-96 bg-base-100 shadow-xl mb-8">
         <div class="card-body">
-          <h2 class="card-title text-2xl">My Experience</h2>
-          <h4 class="text-xl">BSE in Computer Engineering</h4>
+          <h2 class="card-title text-2xl  font-bold text-amber-500">My Experience</h2>
+          <h4 class="text-xl  font-bold">BSE in Computer Engineering</h4>
           <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons
             available. Aenean commodo ligula eget dolor.?</p>
         </div>
       </div>
       <div class="card w-96 bg-base-100 shadow-xl">
         <div class="card-body">
-          <h2 class="card-title text-2xl">My Experience</h2>
-          <h4 class="text-xl">Diploma in Computer Engineering</h4>
+          <h2 class="card-title text-2xl font-bold text-amber-500">My Experience</h2>
+          <h3 class="text-xl ">Diploma in Computer Engineering</h3>
           <p>List skill/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons
             available. Aenean commodo ligula eget dolor.?</p>
         </div>
@@ -193,8 +209,8 @@
   </section>
 
   <div class="card-actions flex justify-center items-center my-16">
-    <button class="btn btn-outline btn-warning">Hire Me</button>
-  </div> -->
+    <button class="btn btn-outline btn-warning">MESSAGES ME</button>
+  </div>
   <!-- ------------experience section end here --------------->
 
 
